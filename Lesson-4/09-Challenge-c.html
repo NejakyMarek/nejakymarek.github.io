@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body>
+
+<button onclick="clickHeads()">heads</button>
+<button onclick="clickTails()">tails</button>
+<p class="you-chose"></p>
+
+<script>
+   
+    function clickHeads() {
+        document.querySelector('.you-chose')
+        .innerHTML = 'You chose: heads';    
+    }
+    function clickTails() {
+        document.querySelector('.you-chose')
+        .innerHTML = 'You chose: tails';
+    }
+   
+</script>
+
+
+</body>
+</html>

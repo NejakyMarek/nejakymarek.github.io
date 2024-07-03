@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>73</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <script>
+const newParagraph = document.createElement("p")
+newParagraph.textContent = "Text do nového odstavce"
+document.querySelector("header").appendChild(newParagraph)
+
+const newDiv = document.createElement("div")
+document.querySelector("header").appendChild(newDiv)
+
+const secondParagraph = document.createElement("p")
+secondParagraph.textContent = "Testovací text do divu"
+newDiv.appendChild(secondParagraph)
+
+secondParagraph.append("Nový text")
+secondParagraph.prepend("Starý text")
+
+const newSpan = document.createElement("span")
+newSpan.textContent = "Nový span"
+secondParagraph.prepend(newSpan)
+
+    </script>
+
+</body>
+</html>

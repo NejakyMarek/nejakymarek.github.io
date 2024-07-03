@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>74 To Do List</title>
+</head>
+<body>
+<header>
+    <h1>Moja ToDo Apka</h1>
+
+</header>
+<main>
+<h2>Tasky:</h2>
+</main>
+    <script>
+        let toDoList = [{
+            task: "Umyt riad",
+            state: false
+        }, { 
+            task: "Upratat",
+            state: false
+        }, {
+            task: "Vyniest smeti",
+            state: true
+        }, {
+            task: "Osprchovat sa",
+            state: true
+        }, {
+            task: "Vyvesat pradlo",
+            state: false
+        }]
+        let taskLeft = toDoList.filter(function(stateof){
+            return stateof.state === false
+            
+        })
+       
+        const newParagraph = document.createElement("p");
+        newParagraph.textContent = `Zostavaju este ${taskLeft.length} tasky.`
+        document.querySelector("header").append(newParagraph);
+    
+        for (let i = 0; i < toDoList.length; i++) {
+            const element = toDoList[i];
+            const newParagraph2 = document.createElement("p");
+            newParagraph2.textContent = element.task;
+            document.querySelector("main").appendChild(newParagraph2);
+        }
+
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41 Objekt</title>
+</head>
+<body>
+    
+    <script>
+    const vladniNarizeni = true;
+        
+    const school = {
+        type: 'Gymnazium',
+        street: 'Laniho',
+        city: 'Bytca',
+        capacity: '256',
+        open: function (vladniNarizeni) {
+                console.log(`Skola ${this.type} ${this.street} je otevrena.`);
+            },
+        closed: function (vladniNarizeni) {
+                console.log(`Skola ${this.type} ${this.street} je zatvorena.`);
+            }
+    }
+    if (vladniNarizeni) {
+        school.closed();
+    }else{
+        school.open();
+    }
+
+    </script>
+</body>
+</html>

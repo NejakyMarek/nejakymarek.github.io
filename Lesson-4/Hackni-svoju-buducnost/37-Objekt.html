@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37</title>
+</head>
+<body>
+    
+    <script>
+        let person1 = {
+            name: 'David Satek',
+            age: 34,
+            city: 'Ceske Budejovice',
+            gender: 'men'
+        }
+        let person2 = {
+            name: 'Marek Cedzo',
+            age: 22,
+            city: 'Hvozdnica',
+            gender: 'men'
+        }
+        let person3 = {
+            name: 'Janka Varosova',
+            age: 19,
+            city: 'Povazska Bystrica',
+            gender: 'woman'
+        }
+
+        const oOsobe = function (person) {
+            if (person.gender === 'men') {
+                return `Ahoj. Volam sa ${person.name}.Pochadzam z ${person.city} a mam ${person.age} rokov.`
+            }else{
+                return `Ahoj. Moje meno je ${person.name}.Pochadzam z ${person.city} a mam ${person.age} rokov.`
+            }
+        }
+
+        console.log(oOsobe(person2));
+        console.log(oOsobe(person3));
+    </script>
+</body>
+</html>

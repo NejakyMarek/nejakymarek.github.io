@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65 filter</title>
+</head>
+<body>
+    
+    <script>
+    let criminals = [{
+    firstName: "Martin",
+    secondName: "Zelený",
+    birth: 1985,
+    licencePlate: "85C3322",
+    address: "U sloupů 16",
+    city: "České Budějovice"
+}, {
+    firstName: "Jana",
+    secondName: "Růžová",
+    birth: 1996,
+    licencePlate: "93K3922",
+    address: "Malská 29",
+    city: "České Budějovice"
+}, {
+    firstName: "Filip",
+    secondName: "Modrý",
+    birth: 1989,
+    licencePlate: "2EP6328",
+    address: "Stevardská 38",
+    city: "České Budějovice"
+}]
+
+let podozrivy = prompt();
+
+let vysledokHladania = criminals.filter(function(person){
+    let weTryFind = person.licencePlate.includes(podozrivy);
+    return weTryFind
+})
+vysledokHladania.forEach(function(person){
+    console.log(`Meno: ${person.firstName}`);
+    console.log(`Priezvisko: ${person.secondName}`);
+    console.log(`Narodeny: ${person.birth}`);
+    console.log(`Spz: ${person.licencePlate}`);
+    console.log(`Adresa: ${person.address}`);
+    console.log(`Mesto: ${person.city}`);
+    console.log(`________________________________`);
+})
+
+    </script>
+
+</body>
+</html> 

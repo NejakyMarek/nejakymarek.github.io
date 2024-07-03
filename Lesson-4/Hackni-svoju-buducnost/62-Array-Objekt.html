@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>62 findIndex</title>
+</head>
+<body>
+    
+    <script>
+    let criminals = [{
+    firstName: "Martin",
+    secondName: "Zelený",
+    birth: 1985,
+    address: "U sloupů 16",
+    city: "České Budějovice"
+}, {
+    firstName: "Jana",
+    secondName: "Růžová",
+    birth: 1996,
+    address: "Malská 29",
+    city: "České Budějovice"
+}, {
+    firstName: "Filip",
+    secondName: "Modrý",
+    birth: 1989,
+    address: "Stevardská 38",
+    city: "České Budějovice"
+}]
+    let menoPodozriveho = prompt("Zadajte meno podozriveho.")
+   
+   /* for (let i = 0; i < criminals.length; i++) {
+        if (criminals[i].firstName === menoPodozriveho){
+            let rozpis = criminals[i];
+            console.log(rozpis.firstName);
+            console.log(rozpis.secondName);
+            console.log(rozpis.birth);
+            console.log(rozpis.address);
+            console.log(rozpis.city);
+        }
+    }
+    */
+    let result = criminals.findIndex(function(podozrivy){
+        return podozrivy.firstName === menoPodozriveho;
+        
+    })
+    let podozrivy = (criminals[result]);
+    function vypisPodozriveho(person) {
+        console.log(person.firstName);
+        console.log(person.secondName);
+        console.log(person.birth);
+        console.log(person.address);
+        console.log(person.city);
+    }
+    vypisPodozriveho(podozrivy);
+
+    
+    </script>
+
+</body>
+</html> 

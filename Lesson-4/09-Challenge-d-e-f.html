@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body>
+
+<input type="text" class="name" onkeydown="
+    if (event.key==='Enter') {
+        sentName();
+    }">
+<input type="submit" onclick="sentName()">
+<p class="your-name"></p>
+
+<script>
+   
+   const userName =
+   document.querySelector('.name');
+
+    function sentName() {
+        document.querySelector('.your-name')
+        .innerHTML = `Your name is: ${userName.value}`;
+        
+    }
+
+</script>
+
+
+</body>
+</html>

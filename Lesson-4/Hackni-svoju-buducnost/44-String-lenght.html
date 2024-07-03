@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41 Objekt</title>
+</head>
+<body>
+    
+    <script>
+   let password = 'Cdfgfs12dgfsdgsdf';
+   
+   if (password.length > 13) {
+        console.log('Velmi silne heslo.');
+   } else if (password.length >= 8 && password.length <= 13) {
+        console.log('Silne heslo.');
+   } else {
+        console.log('Slabe heslo');
+   }
+
+   if (password.includes('1234')) {
+        console.log('Heslo nesmie obsahovat 1234.');
+   }else {
+        console.log('Heslo je v poriadku.');
+   }
+    </script>
+</body>
+</html>
