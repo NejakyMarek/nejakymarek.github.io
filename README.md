@@ -1,1 +1,1 @@
-# nejakymarek.github.io
+# Učenie sa Javascriptu, zaklady OOP
